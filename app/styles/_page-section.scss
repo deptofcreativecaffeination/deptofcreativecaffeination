@@ -1,0 +1,20 @@
+.page-section {
+  padding: 2em;
+  .page-section__inner {
+    @include container;
+  }
+}
+
+.section-heading {
+  color: $gold;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  &:after {
+    content: '';
+    width: 1em;
+    display: block;
+    border-bottom: 1px solid $gold;
+    margin: auto;
+  }
+}
