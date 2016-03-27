@@ -1,0 +1,50 @@
+form {
+  max-width: 480/16*1rem;
+  margin: 1rem auto;
+  button[type=submit] {
+    float: right;
+  }
+}
+
+input {
+  display: block;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  border-bottom: 0.125rem solid $gray;
+  width: 100%;
+}
+
+input.is-filled,
+textarea.is-filled {
+  border-color: $black;
+}
+
+textarea {
+  margin: 1rem 0;
+  width: 100%;
+  background: transparent;
+  text-align: left;
+  padding: 0.5rem;
+  min-height: 240/16*1rem;
+  border: 0.125rem solid $gray;
+}
+
+button {
+  display: inline-block;
+  background: transparent;
+  padding: 0.5rem 1rem;
+  border: 0.125rem solid $black;
+  text-transform: uppercase;
+  color: $black;
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
+}
+
+button.inactive {
+  border-color: $gray;
+  color: $gray;
+}

@@ -1,5 +1,6 @@
 .page-section {
-  padding: 2em;
+  padding: 3em;
+  @include clearfix;
   .page-section__inner {
     @include container;
   }
