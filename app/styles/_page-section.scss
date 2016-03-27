@@ -7,15 +7,16 @@
 }
 
 .section-heading {
-  color: $gold;
+  color: $black;
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
+  font-size: 1.75rem;
   &:after {
     content: '';
     width: 1em;
     display: block;
-    border-bottom: 1px solid $gold;
+    border-bottom: 1px solid $black;
     margin: auto;
   }
 }
