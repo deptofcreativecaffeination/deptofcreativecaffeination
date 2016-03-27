@@ -1,8 +1,12 @@
 .section-team {
   text-align: center;
   background-color: #efefef;
+  .bio-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   .bio {
-    float: left;
     margin: 1rem;
   }
 }

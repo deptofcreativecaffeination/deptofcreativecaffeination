@@ -16,6 +16,10 @@ input {
   width: 100%;
 }
 
+input[name="_gotcha"] {
+  display: none;
+}
+
 input.is-filled,
 textarea.is-filled {
   border-color: $black;

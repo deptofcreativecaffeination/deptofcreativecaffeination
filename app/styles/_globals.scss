@@ -16,8 +16,27 @@ body {
 img {
   max-width: 100%;
 }
+
+a {
+  color: $purple;
+  text-decoration: none;
+  border-bottom: 1px solid $purple;
+  &:hover {
+    color: $purple-light;
+  }
+}
 .code {
   font-family: monospace;
+}
+.btn {
+  color: $black;
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 0.125em solid $black;
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
 }
 
 .browserupgrade {
@@ -25,9 +44,4 @@ img {
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
-}
-
-.col-1-2 {
-  width: 50%;
-  float: left;
 }

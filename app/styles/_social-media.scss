@@ -2,16 +2,15 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  text-align: right;
   font-size: 1.25rem;
+  display: flex;
   li {
-    display: inline-block;
-    margin-left: 0.5rem;
-    a {
-      padding: 0.5rem;
-    }
-    a:hover {
-      color: $white;
-    }
+    margin-right: 1em;
+  }
+  a {
+    border: 0;
+  }
+  a:hover {
+    color: $white;
   }
 }

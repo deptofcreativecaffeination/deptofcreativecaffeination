@@ -2,7 +2,11 @@
   background-color: $yellow;
   padding: 2em;
   h1 {
-    width: 355/16*1rem;
-    margin: 90/16*1rem auto;
+    img {
+      display: block;
+      width: 355/16*1rem;
+      margin: 90/16*1rem auto;
+      max-width: 100%;
+    }
   }
 }
