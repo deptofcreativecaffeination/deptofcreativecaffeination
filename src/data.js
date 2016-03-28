@@ -8,7 +8,7 @@ const siteData = {
       url: 'http://rxartisans.com',
     },
     { name: 'ProgStar', url: 'http://progstar.org' },
-    { name: 'MCAD Sustainable Design Blog', url: 'http://mcadsustainabldesign.com' },
+    { name: 'MCAD Sustainable Design Blog', url: 'http://mcadsustainabledesign.com' },
     { name: 'Knitting Counter', url: 'http://knittingcounter.com' },
   ],
   bios: [
