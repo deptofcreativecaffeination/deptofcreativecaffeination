@@ -9,6 +9,7 @@ import siteData from '../data.js';
 
 // font awesome assets
 import 'font-awesome/scss/font-awesome.scss';
+import '../analytics.js';
 
 function HomePage() {
   return (

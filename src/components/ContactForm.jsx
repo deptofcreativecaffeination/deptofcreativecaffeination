@@ -24,11 +24,6 @@ function ContactForm({ settings }) {
       </textarea>
       <input
         type="hidden"
-        name="_next"
-        value="//deptofcreativecaffeination.com/thanks.html"
-      />
-      <input
-        type="hidden"
         name="_subject"
         value={ getSubject(settings) }
       />
