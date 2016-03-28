@@ -1,10 +1,17 @@
 import React, { PropTypes } from 'react';
 
-function PageSection({ title, children }) {
+function renderTitle(title) {
+  if (!title) return '';
   return (
-    <section className="page-section" id="work">
+    <h2 className="section-heading" >{title}</h2>
+  );
+}
+
+function PageSection({ title, children, className }) {
+  return (
+    <section className={`page-section ${className || ''}`} >
       <div className="page-section__inner">
-        <h2 className="section-heading" >{title}</h2>
+        { renderTitle(title) }
         { children }
       </div>
     </section>
@@ -12,8 +19,9 @@ function PageSection({ title, children }) {
 }
 
 PageSection.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   children: PropTypes.object,
+  className: PropTypes.string,
 };
 
 export default PageSection;

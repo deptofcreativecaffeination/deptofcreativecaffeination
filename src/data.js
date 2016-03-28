@@ -18,14 +18,20 @@ const siteData = {
       status: 'lineOfCode.forEach(drinkLatte)',
       statusClasses: 'code',
       img: require('./images/james-headshot-island.jpg'),
+      url: 'http://james.mn',
     },
     {
       name: 'Emily Ward',
       title: 'Lead Designer',
       status: 'Sipping Serifs and Espresso',
       img: require('./images/emily-headshot-2016.jpg'),
+      url: 'http://emilyward.net',
     },
   ],
+  contactForm: {
+    mailTo: 'hello@deptofcreativecaffeination.com',
+    subject: '[CONTACT FORM]',
+  },
   socialMedia: {
     twitter: 'creativecaff',
     email: 'hello@deptofcreativecaffeination.com',
