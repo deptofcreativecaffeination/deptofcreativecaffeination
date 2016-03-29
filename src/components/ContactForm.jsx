@@ -29,14 +29,7 @@ const ContactForm = React.createClass({
   },
 
   getFormClassNames() {
-    // check em all
-    const allGood = [
-      this.state.isNameValid,
-      this.state.isEmailValid,
-      this.state.isMessageValid,
-    ].every(item => !!item);
-
-    if (allGood) {
+    if (this.isFormValid()) {
       return 'is-valid';
     }
 
@@ -49,6 +42,14 @@ const ContactForm = React.createClass({
       this.state.name,
       this.state.email,
     ].join(' ');
+  },
+
+  isFormValid() {
+    return [
+      this.state.isNameValid,
+      this.state.isEmailValid,
+      this.state.isMessageValid,
+    ].every(item => !!item);
   },
 
   handleNameChange(event) {
@@ -78,7 +79,12 @@ const ContactForm = React.createClass({
   handleSubmit(event) {
     event.preventDefault();
 
-    // check if _gotcha is filled in
+    // TODO: check if _gotcha is filled in
+
+    // validate
+    if (!this.isFormValid()) {
+      return;
+    }
 
     // AJAX it for formspree
     request

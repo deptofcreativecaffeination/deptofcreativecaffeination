@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import DefaultPage from './DefaultPage.jsx';
 import PageSection from '../components/PageSection';
 import ProjectGrid from '../components/ProjectGrid';
@@ -10,6 +11,7 @@ import siteData from '../data.js';
 
 const HomePage = () => (
   <DefaultPage>
+    <Helmet title="Home" />
 
     <PageSection title="Our Work" className="section-projects">
       <ProjectGrid projects={siteData.projects} />

@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import FontAwesome from 'react-fontawesome';
+import Helmet from 'react-helmet';
 import PageHeader from '../components/PageHeader';
 import PageSection from '../components/PageSection';
 
@@ -12,6 +13,11 @@ import '../analytics.js';
 
 const DefaultPage = ({ children }) => (
   <div className="page-wrap">
+
+    <Helmet
+      defaultTitle="The Dept of Creative Caffeination"
+      titleTemplate="%s | The Dept of Creative Caffeination"
+    />
 
     <PageHeader
       logoImage={siteData.logo}

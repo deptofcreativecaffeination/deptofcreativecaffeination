@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import { Link } from 'react-router';
 import DefaultPage from './DefaultPage.jsx';
 import PageSection from '../components/PageSection';
@@ -9,6 +10,7 @@ const email = siteData.socialMedia.email;
 
 const ThankYouPage = () => (
   <DefaultPage>
+    <Helmet title="Thank You" />
     <PageSection title="Thank You">
       <p>Great!</p>
       <p>We sent your message to <a href={`mailto:${email}`}>{email}</a>!</p>
