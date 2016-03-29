@@ -30,7 +30,7 @@ const siteData = {
   ],
   contactForm: {
     mailTo: 'hello@deptofcreativecaffeination.com',
-    subject: '[CONTACT FORM]',
+    subjectPrefix: '[CONTACT FORM]',
   },
   socialMedia: {
     twitter: 'creativecaff',

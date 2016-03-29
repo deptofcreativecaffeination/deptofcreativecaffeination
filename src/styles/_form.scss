@@ -5,7 +5,6 @@ form {
     float: right;
   }
 }
-
 input {
   display: block;
   margin: 1rem 0;
@@ -14,15 +13,42 @@ input {
   border: none;
   border-bottom: 0.125rem solid $gray;
   width: 100%;
+  border-radius: 0;
+  &:focus {
+    background-color: $yellow-light;
+    border-bottom-color: $black;
+    outline: none;
+  }
 }
+.input-wrapper,
+.textarea-wrapper {
+  position: relative;
+  &:after {
+    font-family: "FontAwesome";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    transform: translateY(-50%);
+  }
+  &.is-valid:after {
+    content: "\f058"; // checkmark
+    color: $green;
+  }
+  &.is-invalid:after {
+    content: "\f057"; // x
+    color: $red;
+  }
+}
+
+.textarea-wrapper:after {
+  top: 1.5em;
+  transform: none;
+}
+
 
 input[name="_gotcha"] {
   display: none;
-}
-
-input.is-filled,
-textarea.is-filled {
-  border-color: $black;
 }
 
 textarea {
@@ -31,6 +57,7 @@ textarea {
   background: transparent;
   text-align: left;
   padding: 0.5rem;
+  padding-right: 2em;
   min-height: 240/16*1rem;
   border: 0.125rem solid $gray;
 }
@@ -39,16 +66,21 @@ button {
   display: inline-block;
   background: transparent;
   padding: 0.5rem 1rem;
-  border: 0.125rem solid $black;
+  border: 0.125rem solid $gray;
   text-transform: uppercase;
-  color: $black;
+  color: $gray;
   &:hover {
-    background-color: $black;
-    color: $white;
+    background-color: $white;
+    color: $gray;
   }
 }
 
-button.inactive {
-  border-color: $gray;
-  color: $gray;
+form.is-valid button[type=submit] {
+  border-color: $green;
+  background-color: $white;
+  color: $green;
+  &:hover {
+    background-color: $green;
+    color: $white;
+  }
 }

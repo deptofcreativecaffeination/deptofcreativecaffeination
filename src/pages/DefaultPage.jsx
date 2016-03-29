@@ -48,7 +48,7 @@ const DefaultPage = ({ children }) => (
 );
 
 DefaultPage.propTypes = {
-  children: PropTypes.array,
+  children: PropTypes.node,
 };
 
 export default DefaultPage;

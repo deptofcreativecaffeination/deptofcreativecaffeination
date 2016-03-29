@@ -24,7 +24,10 @@ const HomePage = () => (
         <p>
           We love working with small to medium-sized businesses and non-profits.
         </p>
-        <ContactForm settings={siteData.contactForm} />
+        <ContactForm
+          mailTo={siteData.contactForm.mailTo}
+          subjectPrefix={siteData.contactForm.subjectPrefix}
+        />
       </div>
     </PageSection>
   </DefaultPage>

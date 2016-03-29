@@ -20,7 +20,7 @@ function PageSection({ title, children, className }) {
 
 PageSection.propTypes = {
   title: PropTypes.string,
-  children: PropTypes.object,
+  children: PropTypes.node,
   className: PropTypes.string,
 };
 
