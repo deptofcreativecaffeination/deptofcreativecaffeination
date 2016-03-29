@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import WebFont from 'webfontloader';
-import HomePage from './pages/HomePage';
+import App from './App';
 
 // Styles
 import 'normalize.css';
@@ -11,5 +11,4 @@ WebFont.load({
   typekit: { id: 'gnf2mov' },
 });
 
-
-render(<HomePage />, document.getElementById('root'));
+render(<App />, document.getElementById('root'));

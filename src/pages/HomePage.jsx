@@ -1,24 +1,15 @@
 import React from 'react';
-import FontAwesome from 'react-fontawesome';
-import PageHeader from '../components/PageHeader';
+import DefaultPage from './DefaultPage.jsx';
 import PageSection from '../components/PageSection';
 import ProjectGrid from '../components/ProjectGrid';
 import BioList from '../components/BioList';
 import ContactForm from '../components/ContactForm';
+
+// Site Data
 import siteData from '../data.js';
 
-// font awesome assets
-import 'font-awesome/scss/font-awesome.scss';
-import '../analytics.js';
-
-function HomePage() {
-  return (
-    <div className="page-wrap">
-
-      <PageHeader
-        logoImage={siteData.logo}
-        alt={siteData.name}
-      />
+const HomePage = () => (
+  <DefaultPage>
 
     <PageSection title="Our Work" className="section-projects">
       <ProjectGrid projects={siteData.projects} />
@@ -36,31 +27,8 @@ function HomePage() {
         <ContactForm settings={siteData.contactForm} />
       </div>
     </PageSection>
+  </DefaultPage>
+);
 
-      <PageSection className="section-footer">
-        <div>
-          <ul className="social-media">
-            <li>
-              <a href="https://github.com/deptofcreativecaffeination">
-                <FontAwesome name="github" />
-              </a>
-            </li>
-            <li>
-              <a href="mailto:hello@deptofcreativecaffeination.com">
-                <FontAwesome name="envelope" />
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/deptofcc">
-                <FontAwesome name="twitter" />
-              </a>
-            </li>
-          </ul>
-          <p>&copy; The Department of Creative Caffeination</p>
-        </div>
-      </PageSection>
-    </div>
-  );
-}
 
 export default HomePage;
